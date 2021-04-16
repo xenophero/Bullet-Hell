@@ -40,7 +40,6 @@ func spawn_bullets():
 		random_rotations()
 	else:
 		distributed_rotations()
-		
 	var spawned_bullets = []
 	for i in range(0, number_of_bullets):
 		#instancing
