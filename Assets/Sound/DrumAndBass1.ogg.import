@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/DrumAndBass1.ogg-d9286f5765fdf25858a2922b4f2cc5f0.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sound/DrumAndBass1.ogg"
+dest_files=[ "res://.import/DrumAndBass1.ogg-d9286f5765fdf25858a2922b4f2cc5f0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

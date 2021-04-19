@@ -1,0 +1,73 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Kenney Pixel Square.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://UI/BuffUI.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.0901961, 0.207843, 0.388235, 0.556863 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="DynamicFont" id=2]
+outline_size = 1
+outline_color = Color( 1, 1, 1, 0.196078 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 9
+font_data = ExtResource( 1 )
+
+[node name="BuffUI" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = -0.000184345
+anchor_right = -0.000184345
+margin_left = 598.869
+margin_top = 1.42425
+margin_right = 638.869
+margin_bottom = 41.4242
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = 0.82589
+margin_top = 1.28063
+margin_right = 40.8259
+margin_bottom = 25.2806
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.756863, 0.85098, 0.94902, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "##"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buffText" type="Label" parent="Panel"]
+margin_left = -2.71364
+margin_top = 20.9885
+margin_right = 45.2864
+margin_bottom = 44.9885
+custom_fonts/font = SubResource( 3 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CountDown" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+[connection signal="timeout" from="CountDown" to="." method="_on_CountDown_timeout"]

@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://HealthBar.gd" type="Script" id=1]
+[ext_resource path="res://Assets/UI/HealthBar.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/HealthBarwhite.png" type="Texture" id=3]
+
+[node name="HealthBar" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HealthBarUnder" type="TextureProgress" parent="CanvasLayer"]
+margin_right = 412.0
+margin_bottom = 64.0
+rect_scale = Vector2( 0.4, 0.4 )
+max_value = 200.0
+step = 1.0
+value = 200.0
+texture_under = ExtResource( 3 )
+texture_over = ExtResource( 2 )
+texture_progress = ExtResource( 3 )
+tint_under = Color( 0.121569, 0.121569, 0.121569, 1 )
+tint_progress = Color( 1, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBarOver" type="TextureProgress" parent="CanvasLayer"]
+margin_right = 412.0
+margin_bottom = 64.0
+rect_scale = Vector2( 0.4, 0.4 )
+max_value = 200.0
+step = 1.0
+value = 200.0
+texture_under = ExtResource( 2 )
+texture_over = ExtResource( 2 )
+texture_progress = ExtResource( 3 )
+tint_progress = Color( 0, 1, 0.0862745, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UpdateTween" type="Tween" parent="CanvasLayer"]
+
+[node name="PulseTween" type="Tween" parent="CanvasLayer"]
+
+[node name="FlashTween" type="Tween" parent="CanvasLayer"]

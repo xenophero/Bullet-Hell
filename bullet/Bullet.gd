@@ -1,6 +1,6 @@
 extends Area2D
 
-export (float) var lifetime = 10.00
+export (float) var lifetime = 1
 export  var speed = 200
 export (Vector2) var velocity = Vector2()
 export (bool) var use_velocity # if true use velocity if false use rotation
@@ -33,5 +33,5 @@ func _on_Timer_timeout():
 
 
 func _on_Bullet_body_entered(body):
-	if body.name == "Player":
+	if body.is_in_group("player"):
 		body.take_damage()
