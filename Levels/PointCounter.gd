@@ -23,5 +23,6 @@ func _on_Enemy_sendPoints(points):
 	pointsTotal += points
 	print(pointsTotal)
 	$CanvasLayer/pointlabel.set_text(str(pointsTotal))
-	if pointsTotal > 1000:
+	if pointsTotal > 4000:
 		emit_signal("clearTrigger")
+

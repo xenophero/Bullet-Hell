@@ -1,0 +1,1052 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Game.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Sound/BG_13_Nebula.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sound/DrumAndBass1.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Assets/SpaceBackgrounds/BG_3_StarsBG1.png" type="Texture" id=4]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Levels/Level2Check.gd" type="Script" id=6]
+
+[sub_resource type="Animation" id=18]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=19]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=20]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=21]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Hit"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.721569, 0.054902, 0.415686, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="Node2D" instance=ExtResource( 1 )]
+
+[node name="Sprite" parent="ParallaxBackground/ParallaxLayer2" index="0"]
+texture = ExtResource( 4 )
+
+[node name="ParallaxLayer3" parent="ParallaxBackground" index="2"]
+motion_scale = Vector2( 0, 0.05 )
+motion_mirroring = Vector2( 1920, 1080 )
+
+[node name="Sprite" parent="ParallaxBackground/ParallaxLayer3" index="0"]
+position = Vector2( 320, 180 )
+texture = ExtResource( 2 )
+
+[node name="Player" parent="." index="1"]
+position = Vector2( 320, 180 )
+
+[node name="Enemy" parent="." index="2"]
+position = Vector2( 110.163, -97.3283 )
+
+[node name="Sprite" parent="Enemy" index="0"]
+frame = 5
+
+[node name="Boss" parent="." index="3"]
+position = Vector2( 477.234, -7770.48 )
+rotate_speed = 25
+start_hp = 150
+points = 4000
+
+[node name="Sprite" parent="Boss" index="0"]
+frame = 1
+
+[node name="ProgressBar" parent="Boss" index="5"]
+max_value = 150.0
+value = 150.0
+
+[node name="EnemyRed" parent="." index="4"]
+position = Vector2( -84.1171, -259.829 )
+start_hp = 50
+
+[node name="Sprite" parent="EnemyRed" index="0"]
+frame = 4
+
+[node name="AudioStreamPlayer" parent="." index="6"]
+stream = ExtResource( 3 )
+
+[node name="Enemy2" parent="." index="14" instance=ExtResource( 5 )]
+position = Vector2( 273.724, -543.672 )
+radius = 20
+
+[node name="Enemy3" parent="." index="15" instance=ExtResource( 5 )]
+position = Vector2( 505.917, -530.457 )
+radius = 20
+
+[node name="Enemy6" parent="." index="16" instance=ExtResource( 5 )]
+position = Vector2( 460.331, -1512.9 )
+radius = 20
+
+[node name="Enemy7" parent="." index="17" instance=ExtResource( 5 )]
+position = Vector2( 157.608, -1534.77 )
+radius = 20
+
+[node name="Enemy8" parent="." index="18" instance=ExtResource( 5 )]
+position = Vector2( -32.4341, -1533.09 )
+radius = 20
+
+[node name="Enemy9" parent="." index="19" instance=ExtResource( 5 )]
+position = Vector2( 66.7916, -1684.45 )
+radius = 20
+
+[node name="Enemy10" parent="." index="20" instance=ExtResource( 5 )]
+position = Vector2( 359.424, -1676.04 )
+radius = 20
+
+[node name="Enemy11" parent="." index="21" instance=ExtResource( 5 )]
+position = Vector2( 492.285, -1849.26 )
+radius = 20
+
+[node name="Enemy12" parent="." index="22" instance=ExtResource( 5 )]
+position = Vector2( 214.789, -1866.08 )
+radius = 20
+
+[node name="Enemy13" parent="." index="23" instance=ExtResource( 5 )]
+position = Vector2( -86.006, -1875.8 )
+radius = 20
+
+[node name="Enemy14" parent="." index="24" instance=ExtResource( 5 )]
+position = Vector2( -916.068, -1663.05 )
+radius = 20
+
+[node name="Enemy15" parent="." index="25" instance=ExtResource( 5 )]
+position = Vector2( 1352.37, -1579.14 )
+radius = 20
+
+[node name="Enemy16" parent="." index="26" instance=ExtResource( 5 )]
+position = Vector2( 1325.4, -806.013 )
+radius = 20
+
+[node name="Enemy17" parent="." index="27" instance=ExtResource( 5 )]
+position = Vector2( -799.2, -877.932 )
+radius = 20
+
+[node name="Enemy18" parent="." index="28" instance=ExtResource( 5 )]
+position = Vector2( -640.808, -148.198 )
+radius = 20
+
+[node name="Enemy19" parent="." index="29" instance=ExtResource( 5 )]
+position = Vector2( 1208.98, -153.855 )
+radius = 20
+
+[node name="Enemy20" parent="." index="30" instance=ExtResource( 5 )]
+position = Vector2( 1220.3, -2343.06 )
+radius = 20
+
+[node name="Enemy21" parent="." index="31" instance=ExtResource( 5 )]
+position = Vector2( -804.857, -2433.57 )
+radius = 20
+
+[node name="Enemy22" parent="." index="32" instance=ExtResource( 5 )]
+position = Vector2( 219.034, -2699.44 )
+radius = 20
+
+[node name="Enemy23" parent="." index="33" instance=ExtResource( 5 )]
+position = Vector2( 1163.73, -3242.5 )
+radius = 20
+
+[node name="Enemy24" parent="." index="34" instance=ExtResource( 5 )]
+position = Vector2( -720.004, -3270.78 )
+radius = 20
+
+[node name="Enemy25" parent="." index="35" instance=ExtResource( 5 )]
+position = Vector2( 1265.55, -3949.6 )
+radius = 20
+
+[node name="Enemy26" parent="." index="36" instance=ExtResource( 5 )]
+position = Vector2( -793.543, -3926.98 )
+radius = 20
+
+[node name="Enemy27" parent="." index="37" instance=ExtResource( 5 )]
+position = Vector2( 162.465, -3943.95 )
+radius = 20
+
+[node name="Enemy28" parent="." index="38" instance=ExtResource( 5 )]
+position = Vector2( 1210.47, -4887.95 )
+radius = 20
+
+[node name="Enemy29" parent="." index="39" instance=ExtResource( 5 )]
+position = Vector2( -805.535, -4927.95 )
+radius = 20
+
+[node name="Enemy30" parent="." index="40" instance=ExtResource( 5 )]
+position = Vector2( 258.465, -5047.95 )
+radius = 20
+
+[node name="Enemy31" parent="." index="41" instance=ExtResource( 5 )]
+position = Vector2( 1258.47, -5711.95 )
+radius = 20
+
+[node name="Enemy32" parent="." index="42" instance=ExtResource( 5 )]
+position = Vector2( -813.535, -5751.95 )
+radius = 20
+
+[node name="Enemy33" parent="." index="43" instance=ExtResource( 5 )]
+position = Vector2( 282.465, -5879.95 )
+radius = 20
+
+[node name="Enemy34" parent="." index="44" instance=ExtResource( 5 )]
+position = Vector2( 2057.51, -5168.9 )
+radius = 20
+
+[node name="Boss2" parent="." index="45" instance=ExtResource( 5 )]
+position = Vector2( 1923.4, -5796.18 )
+rotate_speed = 69
+shooter_timer_wait_time = 0.17
+spawn_point_count = 8
+radius = 20
+start_hp = 500
+points = 2000
+
+[node name="Sprite" parent="Boss2" index="0"]
+frame = 2
+
+[node name="AnimationPlayer" parent="Boss2" index="3"]
+anims/Hit = SubResource( 18 )
+
+[node name="ProgressBar" parent="Boss2" index="5"]
+max_value = 500.0
+value = 500.0
+
+[node name="Boss6" parent="." index="46" instance=ExtResource( 5 )]
+position = Vector2( 842.939, -8319.13 )
+rotate_speed = 69
+shooter_timer_wait_time = 0.17
+spawn_point_count = 8
+radius = 20
+start_hp = 500
+points = 2000
+
+[node name="Sprite" parent="Boss6" index="0"]
+frame = 1
+
+[node name="AnimationPlayer" parent="Boss6" index="3"]
+anims/Hit = SubResource( 19 )
+
+[node name="ProgressBar" parent="Boss6" index="5"]
+max_value = 500.0
+value = 500.0
+
+[node name="Boss5" parent="." index="47" instance=ExtResource( 5 )]
+position = Vector2( -780.578, -8211.65 )
+rotate_speed = 69
+shooter_timer_wait_time = 0.17
+spawn_point_count = 8
+radius = 20
+start_hp = 500
+points = 2000
+
+[node name="Sprite" parent="Boss5" index="0"]
+frame = 1
+
+[node name="AnimationPlayer" parent="Boss5" index="3"]
+anims/Hit = SubResource( 20 )
+
+[node name="ProgressBar" parent="Boss5" index="5"]
+max_value = 500.0
+value = 500.0
+
+[node name="Boss4" parent="." index="48" instance=ExtResource( 5 )]
+position = Vector2( 1883.8, -7662.94 )
+rotate_speed = 69
+shooter_timer_wait_time = 0.17
+spawn_point_count = 8
+radius = 20
+start_hp = 500
+points = 2000
+
+[node name="Sprite" parent="Boss4" index="0"]
+frame = 1
+
+[node name="AnimationPlayer" parent="Boss4" index="3"]
+anims/Hit = SubResource( 21 )
+
+[node name="ProgressBar" parent="Boss4" index="5"]
+max_value = 500.0
+value = 500.0
+
+[node name="Boss3" parent="." index="49" instance=ExtResource( 5 )]
+position = Vector2( 2078.7, -6363.97 )
+rotate_speed = 69
+shooter_timer_wait_time = 0.17
+spawn_point_count = 8
+radius = 20
+start_hp = 500
+points = 2000
+
+[node name="Sprite" parent="Boss3" index="0"]
+frame = 2
+
+[node name="AnimationPlayer" parent="Boss3" index="3"]
+anims/Hit = SubResource( 22 )
+
+[node name="ProgressBar" parent="Boss3" index="5"]
+max_value = 500.0
+value = 500.0
+
+[node name="Enemy35" parent="." index="50" instance=ExtResource( 5 )]
+position = Vector2( -1109.53, -4431.95 )
+radius = 20
+
+[node name="Enemy4" parent="." index="51" instance=ExtResource( 5 )]
+position = Vector2( 309.591, -419.08 )
+radius = 20
+
+[node name="Enemy5" parent="." index="52" instance=ExtResource( 5 )]
+position = Vector2( 84.9485, -507.804 )
+radius = 20
+
+[node name="EnemyRed2" parent="." index="53" instance=ExtResource( 5 )]
+position = Vector2( 395.087, -234.63 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed2" index="0"]
+animation = "alternate"
+frame = 1
+
+[node name="AnimationPlayer" parent="EnemyRed2" index="3"]
+anims/Hit = SubResource( 1 )
+
+[node name="ProgressBar" parent="EnemyRed2" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed3" parent="." index="54" instance=ExtResource( 5 )]
+position = Vector2( -7.50885, -875.605 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed3" index="0"]
+animation = "alternate"
+frame = 5
+
+[node name="AnimationPlayer" parent="EnemyRed3" index="3"]
+anims/Hit = SubResource( 2 )
+
+[node name="ProgressBar" parent="EnemyRed3" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed4" parent="." index="55" instance=ExtResource( 5 )]
+position = Vector2( 193.264, -869.612 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed4" index="0"]
+animation = "alternate"
+frame = 4
+
+[node name="AnimationPlayer" parent="EnemyRed4" index="3"]
+anims/Hit = SubResource( 3 )
+
+[node name="ProgressBar" parent="EnemyRed4" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed5" parent="." index="56" instance=ExtResource( 5 )]
+position = Vector2( 459.963, -854.629 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed5" index="0"]
+animation = "alternate"
+frame = 4
+
+[node name="AnimationPlayer" parent="EnemyRed5" index="3"]
+anims/Hit = SubResource( 4 )
+
+[node name="ProgressBar" parent="EnemyRed5" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed9" parent="." index="57" instance=ExtResource( 5 )]
+position = Vector2( 653.313, -3197.51 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed9" index="0"]
+animation = "alternate"
+frame = 3
+
+[node name="AnimationPlayer" parent="EnemyRed9" index="3"]
+anims/Hit = SubResource( 8 )
+
+[node name="ProgressBar" parent="EnemyRed9" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed10" parent="." index="58" instance=ExtResource( 5 )]
+position = Vector2( 188.837, -3218.48 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed10" index="0"]
+animation = "alternate"
+frame = 3
+
+[node name="AnimationPlayer" parent="EnemyRed10" index="3"]
+anims/Hit = SubResource( 9 )
+
+[node name="ProgressBar" parent="EnemyRed10" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed11" parent="." index="59" instance=ExtResource( 5 )]
+position = Vector2( -248.668, -3194.51 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed11" index="0"]
+animation = "alternate"
+frame = 3
+
+[node name="AnimationPlayer" parent="EnemyRed11" index="3"]
+anims/Hit = SubResource( 10 )
+
+[node name="ProgressBar" parent="EnemyRed11" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed12" parent="." index="60" instance=ExtResource( 5 )]
+position = Vector2( -314.594, -4363.19 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed12" index="0"]
+animation = "alternate"
+frame = 3
+
+[node name="AnimationPlayer" parent="EnemyRed12" index="3"]
+anims/Hit = SubResource( 11 )
+
+[node name="ProgressBar" parent="EnemyRed12" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed13" parent="." index="61" instance=ExtResource( 5 )]
+position = Vector2( 677.313, -4493.72 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed13" index="0"]
+animation = "alternate"
+frame = 3
+
+[node name="AnimationPlayer" parent="EnemyRed13" index="3"]
+anims/Hit = SubResource( 12 )
+
+[node name="ProgressBar" parent="EnemyRed13" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed17" parent="." index="62" instance=ExtResource( 5 )]
+position = Vector2( -630.706, -6722.43 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed17" index="0"]
+animation = "alternate"
+frame = 3
+
+[node name="AnimationPlayer" parent="EnemyRed17" index="3"]
+anims/Hit = SubResource( 13 )
+
+[node name="ProgressBar" parent="EnemyRed17" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed18" parent="." index="63" instance=ExtResource( 5 )]
+position = Vector2( 442.377, -6754.18 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed18" index="0"]
+animation = "alternate"
+frame = 1
+
+[node name="AnimationPlayer" parent="EnemyRed18" index="3"]
+anims/Hit = SubResource( 14 )
+
+[node name="ProgressBar" parent="EnemyRed18" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed16" parent="." index="64" instance=ExtResource( 5 )]
+position = Vector2( 1596.76, -6724.53 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed16" index="0"]
+animation = "alternate"
+frame = 3
+
+[node name="AnimationPlayer" parent="EnemyRed16" index="3"]
+anims/Hit = SubResource( 15 )
+
+[node name="ProgressBar" parent="EnemyRed16" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed15" parent="." index="65" instance=ExtResource( 5 )]
+position = Vector2( -384.313, -7524.58 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed15" index="0"]
+animation = "alternate"
+frame = 3
+
+[node name="AnimationPlayer" parent="EnemyRed15" index="3"]
+anims/Hit = SubResource( 16 )
+
+[node name="ProgressBar" parent="EnemyRed15" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed14" parent="." index="66" instance=ExtResource( 5 )]
+position = Vector2( 1203.09, -7543.63 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed14" index="0"]
+animation = "alternate"
+frame = 3
+
+[node name="AnimationPlayer" parent="EnemyRed14" index="3"]
+anims/Hit = SubResource( 17 )
+
+[node name="ProgressBar" parent="EnemyRed14" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed6" parent="." index="67" instance=ExtResource( 5 )]
+position = Vector2( 453.97, -1212.72 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed6" index="0"]
+animation = "alternate"
+frame = 3
+
+[node name="AnimationPlayer" parent="EnemyRed6" index="3"]
+anims/Hit = SubResource( 5 )
+
+[node name="ProgressBar" parent="EnemyRed6" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed7" parent="." index="68" instance=ExtResource( 5 )]
+position = Vector2( 188.77, -1218.72 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed7" index="0"]
+animation = "alternate"
+frame = 3
+
+[node name="AnimationPlayer" parent="EnemyRed7" index="3"]
+anims/Hit = SubResource( 6 )
+
+[node name="ProgressBar" parent="EnemyRed7" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="EnemyRed8" parent="." index="69" instance=ExtResource( 5 )]
+position = Vector2( -23.9901, -1230.7 )
+scale = Vector2( 0.96644, 1.04571 )
+rotate_speed = 69
+spawn_point_count = 6
+radius = 25
+start_hp = 50
+points = 100
+
+[node name="Sprite" parent="EnemyRed8" index="0"]
+animation = "alternate"
+frame = 3
+
+[node name="AnimationPlayer" parent="EnemyRed8" index="3"]
+anims/Hit = SubResource( 7 )
+
+[node name="ProgressBar" parent="EnemyRed8" index="5"]
+max_value = 50.0
+value = 50.0
+
+[node name="Level2Check" type="Node" parent="." index="70"]
+script = ExtResource( 6 )
+
+[node name="Timer" type="Timer" parent="Level2Check" index="0"]
+one_shot = true
+[connection signal="sendPoints" from="Enemy2" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy3" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy6" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy7" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy8" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy9" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy10" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy11" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy12" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy13" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy14" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy15" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy16" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy17" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy18" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy19" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy20" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy21" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy22" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy23" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy24" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy25" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy26" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy27" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy28" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy29" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy30" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy31" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy32" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy33" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy34" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Boss2" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Boss6" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Boss5" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Boss4" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Boss3" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy35" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy4" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="Enemy5" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed2" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed3" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed4" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed5" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed9" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed10" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed11" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed12" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed13" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed17" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed18" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed16" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed15" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed14" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed6" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed7" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="sendPoints" from="EnemyRed8" to="PointCounter" method="_on_Enemy_sendPoints"]
+[connection signal="level2" from="Level2Check" to="." method="_on_Level2Check_level2"]
+[connection signal="timeout" from="Level2Check/Timer" to="Level2Check" method="_on_Timer_timeout"]
+
+[editable path="Enemy"]
+
+[editable path="Boss"]
+
+[editable path="EnemyRed"]
+
+[editable path="Boss2"]
+
+[editable path="Boss6"]
+
+[editable path="Boss5"]
+
+[editable path="Boss4"]
+
+[editable path="Boss3"]
+
+[editable path="EnemyRed2"]
+
+[editable path="EnemyRed3"]
+
+[editable path="EnemyRed4"]
+
+[editable path="EnemyRed5"]
+
+[editable path="EnemyRed9"]
+
+[editable path="EnemyRed10"]
+
+[editable path="EnemyRed11"]
+
+[editable path="EnemyRed12"]
+
+[editable path="EnemyRed13"]
+
+[editable path="EnemyRed17"]
+
+[editable path="EnemyRed18"]
+
+[editable path="EnemyRed16"]
+
+[editable path="EnemyRed15"]
+
+[editable path="EnemyRed14"]
+
+[editable path="EnemyRed6"]
+
+[editable path="EnemyRed7"]
+
+[editable path="EnemyRed8"]
